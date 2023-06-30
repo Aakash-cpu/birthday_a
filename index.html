@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script>
+      // Wait for 3 seconds and then load the second page
+      setTimeout(function () {
+        window.location.href = "index_.html"; // Replace 'second_page.html' with the URL of your second page
+      }, 3000); // 3000 milliseconds = 3 seconds
+    </script>
+    <style>
+      body {
+        background: #000;
+        font-family: "Arial", sans-serif;
+        text-align: center;
+      }
+
+      .neon-text {
+        font-size: 60px;
+        color: #fff;
+        text-shadow: 0 0 5px #00c2ff, 0 0 10px #00c2ff, 0 0 20px #00c2ff,
+          0 0 40px #00c2ff, 0 0 80px #00c2ff, 0 0 90px #00c2ff,
+          0 0 100px #00c2ff;
+        animation: neon-animation 1.5s ease-in-out infinite alternate;
+      }
+
+      @keyframes neon-animation {
+        0% {
+          opacity: 0.8;
+        }
+        100% {
+          opacity: 1;
+          text-shadow: 0 0 5px #00c2ff, 0 0 10px #00c2ff, 0 0 20px #00c2ff,
+            0 0 40px #00c2ff, 0 0 80px #00c2ff, 0 0 90px #00c2ff,
+            0 0 100px #00c2ff, 0 0 150px #00c2ff;
+        }
+      }
+
+      /* Media queries for responsiveness */
+      @media (max-width: 768px) {
+        .neon-text {
+          font-size: 40px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .neon-text {
+          font-size: 30px;
+        }
+      }
+    </style>
+    <title>Happy Birthday</title>
+  </head>
+  <body>
+    <h1 class="neon-text">Happy Birthday</h1>
+    <p class="neon-text">
+      May Thakur Ji bless you with a healthy, wealthy and prosperous life.
+    </p>
+  </body>
+</html>
